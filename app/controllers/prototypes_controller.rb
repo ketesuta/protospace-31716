@@ -38,8 +38,10 @@ class PrototypesController < ApplicationController
   end
 
   def destroy
-    @prototype.destroy
-    redirect_to root_path
+    if @prototype.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
   end
 
   def move_to_index
