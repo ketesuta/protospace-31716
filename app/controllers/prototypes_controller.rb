@@ -42,6 +42,7 @@ class PrototypesController < ApplicationController
       redirect_to root_path
     else
       redirect_to root_path
+    end
   end
 
   def move_to_index
